@@ -2,7 +2,6 @@
 """ number of locked boxes """
 
 
-
 def canUnlockAll(boxes):
     """ boxes """
 
