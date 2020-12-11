@@ -5,10 +5,9 @@
 
 def canUnlockAll(boxes):
     """ boxes """
-    
+
     keys = {0}
     added = False
-
     while not added:
         updated = False
         for i in range(len(boxes)):
@@ -18,4 +17,4 @@ def canUnlockAll(boxes):
                         updated = True
                     keys.add(key)
         added = True if not updated else False
-    return len(keys) == len(boxes)
+    return (len(keys) == len(boxes))
