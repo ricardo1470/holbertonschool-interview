@@ -2,7 +2,7 @@
 ---
 | **Filename** | **Description** |
 |---|---|
-| [0x00-lockboxes]() | Interview Preparation ― Algorithms |
+| [0x00-lockboxes](https://github.com/ricardo1470/holbertonschool-interview/tree/master/0x00-lockboxes) | Interview Preparation ― Algorithms |
 |  |   |
 
 ---
