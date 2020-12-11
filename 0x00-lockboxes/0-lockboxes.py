@@ -2,8 +2,10 @@
 """ number of locked boxes """
 
 
+
 def canUnlockAll(boxes):
     """ boxes """
+    
     keys = {0}
     added = False
 
