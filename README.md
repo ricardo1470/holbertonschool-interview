@@ -5,6 +5,7 @@
 | [0x00-lockboxes](https://github.com/ricardo1470/holbertonschool-interview/tree/master/0x00-lockboxes) | Interview Preparation ― Algorithms |
 | [0x01-insert_in_sorted_linked_list]() | Interview Preparation ― Algorithms  |
 | [0x02-heap_insert]() | Interview Preparation ― Algorithms  |
+| [0x03-minimum_operations]() | Interview Preparation ― Algorithms |
 |  |   |
 
 ---
