@@ -6,6 +6,8 @@
 | [0x01-insert_in_sorted_linked_list]() | Interview Preparation ― Algorithms  |
 | [0x02-heap_insert]() | Interview Preparation ― Algorithms  |
 | [0x03-minimum_operations]() | Interview Preparation ― Algorithms |
+| [0x04-sandpiles]() | Interview Preparation ― Algorithms |
+| [0x05. Linked list palindrome]() | Interview Preparation ― Algorithms |
 |  |   |
 
 ---

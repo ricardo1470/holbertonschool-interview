@@ -1,8 +1,8 @@
-> # 0x04-sandpiles
+> # 0x05. Linked list palindrome
 ---
 | **Filename** | **Description** |
 |---|---|
-| [0. Sandpiles sum](./0-sandpiles.c) | function that computes the sum of two sandpiles |
+| [0. Linked list palindrome](./0-is_palindrome.c) | function that computes the sum of two sandpiles |
 |  |   |
 
 ---
@@ -14,7 +14,7 @@
 ---
 
 ## License
-*`0x04-sandpiles` is open source and therefore free to download and use without permission.*
+*`0x05. Linked list palindrome` is open source and therefore free to download and use without permission.*
 
 <a href="url"><img src="https://www.holbertonschool.com/holberton-logo.png" align="middle" width="100" height="30"></a>
 
