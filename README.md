@@ -8,6 +8,7 @@
 | [0x03-minimum_operations](https://github.com/ricardo1470/holbertonschool-interview/tree/master/0x03-minimum_operations) | Interview Preparation ― Algorithms |
 | [0x04-sandpiles](https://github.com/ricardo1470/holbertonschool-interview/tree/master/0x04-sandpiles) | Interview Preparation ― Algorithms |
 | [0x05. Linked list palindrome](https://github.com/ricardo1470/holbertonschool-interview/tree/master/0x05-linked_list_palindrome) | Interview Preparation ― Algorithms |
+| [0x06. Log Parsing](https://github.com/ricardo1470/holbertonschool-interview/tree/master/0x06-log_parsing) | Interview Preparation ― Algorithms |
 |  |   |
 
 ---
