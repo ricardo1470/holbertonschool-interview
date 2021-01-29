@@ -21,6 +21,7 @@ def stdin_status():
         if val > 0:
             print("{}: {}".format(key, val))
 
+
 if __name__ == '__main__':
     try:
         for i, line in enumerate(stdin, 1):
