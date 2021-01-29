@@ -23,6 +23,7 @@ def stdin_status():
 
 
 if __name__ == '__main__':
+    count = 0
     try:
         for i, line in enumerate(stdin, 1):
             try:
@@ -34,8 +35,10 @@ if __name__ == '__main__':
             except:
                 pass
 
-            if not i % 10:
+            if count == 9:
                 stdin_status()
+                count = -1
+            count += 1
 
     except KeyboardInterrupt:
         """ key code: Ctrl+c """
