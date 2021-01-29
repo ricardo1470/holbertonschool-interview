@@ -5,14 +5,14 @@
     <IP Address> - [<date>] "GET /projects/260 HTTP/1.1"
     <status code> <file size>
     -"""
-
 from sys import stdin
+
 
 status_code = {'200': 0, '401': 0, '403': 0, '404': 0, '405': 0, '500': 0}
 file_size = 0
 
 
-def status_codes():
+def stdin_status():
     """ status code doesn’t
         appear or is not an integer,
         don’t print anything for this status code
@@ -34,10 +34,10 @@ if __name__ == '__main__':
             except:
                 pass
 
-        if not i % 10:
-            status_codes()
+            if not i % 10:
+                stdin_status()
 
     except KeyboardInterrupt:
-        status_codes()
+        stdin_status()
         raise
-    status_codes()
+    stdin_status()
