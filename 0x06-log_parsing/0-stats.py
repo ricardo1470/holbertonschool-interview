@@ -37,6 +37,7 @@ if __name__ == '__main__':
                 stdin_status()
 
     except KeyboardInterrupt:
+        """ key code: Ctrl+c """
         stdin_status()
         raise
 
