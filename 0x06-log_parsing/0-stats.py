@@ -3,8 +3,7 @@
     line and computes metrics:
     - Input format:
     <IP Address> - [<date>] "GET /projects/260 HTTP/1.1"
-    <status code> <file size>
-    -"""
+    <status code> <file size> """
 from sys import stdin
 
 
