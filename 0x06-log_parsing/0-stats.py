@@ -39,4 +39,5 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         stdin_status()
         raise
+
     stdin_status()
