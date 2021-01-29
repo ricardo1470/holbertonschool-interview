@@ -6,9 +6,10 @@
     <status code> <file size> """
 from sys import stdin
 
+status_codes = {"200": 0, "301": 0, "400": 0, "401": 0,
+                "403": 0, "404": 0, "405": 0, "500": 0}
 
-status_code = {'200': 0, '401': 0, '403': 0, '404': 0, '405': 0, '500': 0}
-file_size = 0
+size = 0
 
 
 def stdin_status():
@@ -16,30 +17,27 @@ def stdin_status():
         appear or is not an integer,
         don’t print anything for this status code
     """
-    print("File size: {}".format(file_size))
-    for status in sorted(status_code.keys()):
-        if status_code[status]:
-            print("{}: {}".format(status, status_code[status]))
+    print("File size: {}".format(size))
+    for status in sorted(status_codes.keys()):
+        if status_codes[status]:
+            print("{}: {}".format(status, status_codes[status]))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     count = 0
     try:
-        for i, line in enumerate(stdin, 1):
+        for line in stdin:
             try:
-                info = line.split()
-                file_size += int(info[-1])
-                if info[-2] in status_code.keys():
-                    status_code[info[-2]] += 1
-
+                items = line.split()
+                size += int(items[-1])
+                if items[-2] in status_codes:
+                    status_codes[items[-2]] += 1
             except:
                 pass
-
             if count == 9:
                 stdin_status()
                 count = -1
             count += 1
-
     except KeyboardInterrupt:
         """ key code: Ctrl+c """
         stdin_status()
