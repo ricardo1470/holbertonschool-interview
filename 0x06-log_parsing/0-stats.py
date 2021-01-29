@@ -28,7 +28,7 @@ if __name__ == '__main__':
             try:
                 info = line.split()
                 file_size += int(info[-1])
-                if info[-2] in status_code.keys():
+                if info[-2] in status_codes.keys():
                     status_codes[info[-2]] += 1
 
             except:
