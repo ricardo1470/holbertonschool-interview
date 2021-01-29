@@ -17,9 +17,9 @@ def stdin_status():
         don’t print anything for this status code
     """
     print("File size: {}".format(file_size))
-    for key, val in sorted(status_code.items()):
-        if val > 0:
-            print("{}: {}".format(key, val))
+    for status in sorted(status_code.keys()):
+        if status_code[status]:
+            print("{}: {}".format(status, status_code[status]))
 
 
 if __name__ == '__main__':
