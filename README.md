@@ -11,8 +11,7 @@
 | [0x06-Log_Parsing](https://github.com/ricardo1470/holbertonschool-interview/tree/master/0x06-log_parsing) | Interview Preparation ― Algorithms |
 | [0x07-linked_list_cycle](https://github.com/ricardo1470/holbertonschool-interview/tree/master/0x07-linked_list_cycle) | Interview Preparation ― Algorithms  |
 | [0x08-palindrome_integer](https://github.com/ricardo1470/holbertonschool-interview/tree/master/0x08-palindrome_integer) | Interview Preparation ― Algorithms  |
-|  |   |
-| [0x09. UTF-8 Validation]() | Interview Preparation ― Algorithms  |
+| [0x09. UTF-8 Validation](https://github.com/ricardo1470/holbertonschool-interview/tree/master/0x09-utf8_validation) | Interview Preparation ― Algorithms  |
 |  |   |
 
 ---
