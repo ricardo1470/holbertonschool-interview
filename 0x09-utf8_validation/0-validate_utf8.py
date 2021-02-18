@@ -17,7 +17,8 @@ def validUTF8(data):
         bin_rep = format(num, '#010b')[-8:]
         if num_bytes == 0:
             for bit in bin_rep:
-                if bit == '0': break
+                if bit == '0':
+                    break
                 num_bytes += 1
             if num_bytes == 0:
                 continue
