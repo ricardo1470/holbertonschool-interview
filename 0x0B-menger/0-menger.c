@@ -45,4 +45,3 @@ void menger(int level)
 		printf("\n");
 	}
 }
-
