@@ -12,7 +12,7 @@ char find_space(int col, int row)
 	{
 		if (col % 3 == 1 && row % 3 == 1)
 			return (' ');
-		col /= 3, row /= 3;
+		col = col/3, row = row/3;
 	}
 	return ('#');
 }
@@ -36,7 +36,7 @@ void menger(int level)
 	{
 		for (row = 0; row < size; row++)
 			printf("%c", find_space(col, row));
-		putchar(10);
+		printf("\n");
 	}
 }
 
