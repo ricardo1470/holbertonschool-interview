@@ -12,7 +12,7 @@ char find_space(int col, int row)
 	{
 		if (col % 3 == 1 && row % 3 == 1)
 			return (' ');
-		col = col/3, row = row/3;
+		col = col / 3, row = row / 3;
 	}
 	return ('#');
 }
