@@ -1,6 +1,5 @@
 #include "menger.h"
 
-
 /**
  * find_space - gets a character
  * @col: column

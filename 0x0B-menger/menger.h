@@ -6,5 +6,6 @@
 #include <stdlib.h>
 
 void menger(int level);
+char find_space(int col, int row);
 
 #endif /* SLINE_LINE_H */
