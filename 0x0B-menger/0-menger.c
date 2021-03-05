@@ -11,7 +11,9 @@ char find_space(int col, int row)
 	while (col && row)
 	{
 		if (col % 3 == 1 && row % 3 == 1)
+		{
 			return (' ');
+		}
 		col = col / 3, row = row / 3;
 	}
 	return ('#');
@@ -25,17 +27,21 @@ char find_space(int col, int row)
  **/
 void menger(int level)
 {
-	int col, row;
-	int size = pow(3, level);
+	int col, row, size;
 
 	if (level < 0)
 	{
 		return;
 	}
+
+	size = pow(3, level);
+
 	for (col = 0; col < size; col++)
 	{
 		for (row = 0; row < size; row++)
+		{
 			printf("%c", find_space(col, row));
+		}
 		printf("\n");
 	}
 }
