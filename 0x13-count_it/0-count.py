@@ -8,7 +8,7 @@ Javascript should count as javascript, but java should not).
 import requests
 
 
-def count_words(subreddit, word_list, my_dict={}, after=''):
+def count_words(subreddit, word_list, after='', my_dict={}):
     """
     Results should be printed in descending order,
     by the count, and if the count is the same for separate keywords,
@@ -37,11 +37,10 @@ def count_words(subreddit, word_list, my_dict={}, after=''):
         after = rq.json().get('data').get('after')
         if (after is None):
             for key, val in sorted(my_dict.items(),
-                                   key=lambda x: x[1],
-                                   reverse=True):
+                                   key=lambda x: (-x[1], x[0])):
                 if (val != 0):
-                    print("{}: {}".format(key, val))
+                    print("{}: {}".format(key.lower(), val))
             return
-        return count_words(subreddit, word_list, my_dict, after)
+        return count_words(subreddit, word_list, after, my_dict)
     else:
         return
