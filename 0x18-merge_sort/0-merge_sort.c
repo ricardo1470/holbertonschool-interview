@@ -4,7 +4,7 @@
  * merge - merge sort
  * @array: Array to be sorted
  * @size: Size of the array
- * @m: Middle index
+ * @mid: Middle index
  * @temp: Temp array
  * Return: Nothing.
  */
