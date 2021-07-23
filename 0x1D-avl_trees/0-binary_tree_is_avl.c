@@ -10,34 +10,32 @@
  **/
 int is_valid_avl(const binary_tree_t *tree, int min, int max, int *height)
 {
+	int height1 = 0, height2 = 0;
+
 	if (tree == NULL)
 	{
-		return true;
+		return (1);
 	}
 
-	if (tree->left == NULL && tree->right == NULL)
+	if (tree->n <= min || tree->n >= max)
 	{
-		return true;
+		return (0);
 	}
-	else if (tree->left == NULL || tree->right == NULL)
+
+	if (is_valid_avl(tree->left, min, tree->n, &height1) == 0 ||
+		is_valid_avl(tree->right, tree->n, max, &height2) == 0)
 	{
-		return false;
+		return (0);
 	}
-	else if (tree->left->n > tree->right->n)
+
+	*height = ((height1 > height2) ? height1 : height2) + 1;
+
+	if (abs(height1 - height2) > 1)
 	{
-		return false;
+		return (0);
 	}
-	else if (tree->left->n == tree->right->n)
-	{
-		return is_valid_avl(tree->left, min, tree->n, height) &&
-		is_valid_avl(tree->right, tree->n, max, height);
-	}
-	else
-	{
-		int left_height = 0, right_height = 0;
-	}
-	return is_valid_avl(tree->left, min, tree->n, height) &&
-	is_valid_avl(tree->right, tree->n, max, height);
+
+	return (1);
 }
 
 
@@ -51,13 +49,7 @@ int binary_tree_is_avl(const binary_tree_t *tree)
 	int height = 0;
 
 	if (tree == NULL)
-	{
-		return true;
-	}
-	else if (tree->left == NULL && tree->right == NULL)
-	{
-		return true;
-	}
+		return (0);
 
-	return is_valid_avl(tree, -1, tree->n, &height);
+	return (is_valid_avl(tree, INT_MIN, INT_MAX, &height));
 }
