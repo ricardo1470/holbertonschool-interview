@@ -6,7 +6,7 @@
  * @min: The minimum node in the tree
  * @max: The maximum node in the tree
  * @height: The height of the tree
- * Returns: true if the binary tree is AVL, false otherwise
+ * Return: true if the binary tree is AVL, false otherwise
  **/
 int is_valid_avl(const binary_tree_t *tree, int min, int max, int *height)
 {
@@ -49,7 +49,7 @@ int is_valid_avl(const binary_tree_t *tree, int min, int max, int *height)
 /**
  * binary_tree_is_avl - Returns true if the binary tree is AVL
  * @tree: The root of the binary tree
- * Returns: true if the binary tree is AVL, false otherwise
+ * Return: true if the binary tree is AVL, false otherwise
  **/
 int binary_tree_is_avl(const binary_tree_t *tree)
 {
