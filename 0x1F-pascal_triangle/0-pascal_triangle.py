@@ -12,8 +12,14 @@ def pascal_triangle(n):
     if n <= 0:
         return []
 
+    """
+    Returns a list of lists of integers representing
+    """
     triangle = [[1]]
 
+    """
+    Loop through the triangle
+    """
     for i in range(1, n):
         triangle.append([])
         for j in range(i + 1):
